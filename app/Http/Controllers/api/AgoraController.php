@@ -55,7 +55,6 @@ class AgoraController extends Controller
 
             $channelName = $request->channel_name;
             $agora  =   GetToken($request->login_id, $channelName);
-            return $agora;
 
             if ($agora) {
                 $title = $sender->name;
